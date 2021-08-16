@@ -25,7 +25,6 @@ export default function ToursList() {
     else
         return (
             <div className="toursList">
-                {console.log(data)}
                 {data.map(function (tour) {
                     return (
                         <Tour {...tour} data={data} setData={setData}></Tour>

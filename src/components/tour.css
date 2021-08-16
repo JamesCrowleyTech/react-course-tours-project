@@ -1,5 +1,5 @@
 .tour {
-    box-shadow: 0px 5px 15px 7px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 15px 7px rgba(0, 0, 0, 0.18);
     border-radius: 1rem 1rem 0 0;
     overflow: hidden;
     background-color: white;
@@ -16,10 +16,14 @@
     width: 100%;
 }
 
+.tour-details {
+    padding: 3rem 3rem 2rem 3rem;
+}
+
 .tour-title-row {
     display: flex;
     justify-content: space-between;
-    padding: 0.9rem;
+    margin-bottom: 2rem;
 }
 
 .tour-title-main {
@@ -33,7 +37,23 @@
     padding: 0.4rem 0.9rem;
     background-color: rgba(0, 162, 255, 0.192);
     border-radius: 0.8rem;
-    overflow: hidden;
+    /* overflow: hidden; */
+    align-self: center;
+}
+
+.tour-paragraph {
+    font-size: 1.6rem;
+    line-height: 1.4;
+    color: #555;
+}
+
+.tour-toggle-paragraph-button {
+    color: rgba(0, 162, 255, 1);
+    background-color: inherit;
+    font-size: inherit;
+    outline: none;
+    border: none;
+    cursor: pointer;
 }
 
 .tour-button {
@@ -46,7 +66,7 @@
     letter-spacing: 2px;
     background-color: white;
     display: block;
-    margin: 1.5rem auto 0.5rem auto;
+    margin: 2rem auto 0 auto;
     transition: all 0.3s;
     outline: none;
 }

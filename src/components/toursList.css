@@ -1,7 +1,7 @@
 .toursList {
     display: grid;
-    grid-template-columns: minmax(0rem, 63rem);
-    row-gap: 4rem;
+    grid-template-columns: repeat(auto-fit, minmax(26rem, 63rem));
+    gap: 6rem;
     justify-content: center;
     padding: 2rem;
 }
