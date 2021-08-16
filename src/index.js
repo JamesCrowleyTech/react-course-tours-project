@@ -1,14 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import App from "./App";
+import App from "./components/App";
 import reportWebVitals from "./reportWebVitals";
-import { API_URL } from "./config";
-
-(async function () {
-    const data = await fetch(API_URL);
-    const s = await data.json();
-})();
 
 ReactDOM.render(
     <React.StrictMode>
