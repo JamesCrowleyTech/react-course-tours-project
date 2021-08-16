@@ -20,7 +20,6 @@ export default function ToursList() {
             .catch((err) => console.log(err));
     }, []);
 
-    //setInterval(() => console.log(data), 30);
     if (!isDataResolved) return <h1>Loading...</h1>;
     else
         return (

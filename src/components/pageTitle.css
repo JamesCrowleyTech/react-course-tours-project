@@ -1,0 +1,18 @@
+.pageTitle {
+    text-align: center;
+    margin: 8rem 0;
+    font-size: 3.4rem;
+    color: #444;
+    position: relative;
+}
+
+.pageTitle::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 150%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background-color: rgb(0, 153, 255);
+}
