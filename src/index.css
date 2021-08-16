@@ -17,3 +17,7 @@ body {
     box-sizing: border-box;
     background-color: #fafafa;
 }
+
+#root {
+    overflow-y: scroll;
+}

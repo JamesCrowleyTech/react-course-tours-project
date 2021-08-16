@@ -20,13 +20,16 @@ export default function ToursList() {
             .catch((err) => console.log(err));
     }, []);
 
-    if (!isDataResolved) return <h1>Loading...</h1>;
+    if (!isDataResolved)
+        return <h1 className="tourslist-loading">Loading...</h1>;
     else
         return (
-            <div className="tourlist">
+            <div className="toursList">
+                {console.log(data)}
                 {data.map(function (tour) {
-                    console.log(tour);
-                    return <Tour {...tour}></Tour>;
+                    return (
+                        <Tour {...tour} data={data} setData={setData}></Tour>
+                    );
                 })}
             </div>
         );

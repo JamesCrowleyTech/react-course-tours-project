@@ -1,0 +1,11 @@
+.toursList {
+    display: grid;
+    grid-template-columns: minmax(0rem, 63rem);
+    row-gap: 4rem;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.tourslist-loading {
+    text-align: center;
+}
